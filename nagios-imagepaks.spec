@@ -29,9 +29,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_logodir	/usr/share/nagios/images/logos
 
 %description
-Image packs are provided so that you have some colorful OS and
-device images to beautify your CGIs in Nagios.
-Each pack includes GIF, JPEG, PNG, and GD2 versions of each icon.
+Image packs are provided so that you have some colorful OS and device
+images to beautify your CGIs in Nagios. Each pack includes GIF, JPEG,
+PNG, and GD2 versions of each icon.
 
 %prep
 
