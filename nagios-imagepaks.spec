@@ -5,23 +5,23 @@ Release:	0.1
 License:	Open Source
 Group:		Applications/WWW
 Source0:	http://dl.sourceforge.net/nagios/imagepak-base.tar.gz
+# Source0-md5:	35b75ece533dfdf4963a67ce4e77fc4a
 Source1:	http://dl.sourceforge.net/nagios/imagepak-andrade.tar.gz
+# Source1-md5:	6e3d35113812e19a2803281a3317fffb
 Source2:	http://dl.sourceforge.net/nagios/imagepak-bernhard.tar.gz
+# Source2-md5:	cd711110929fd2487234172a533e82c5
 Source3:	http://dl.sourceforge.net/nagios/imagepak-cook.tar.gz
+# Source3-md5:	248d682712c594fc4734c0158d2d2ee4
 Source4:	http://dl.sourceforge.net/nagios/imagepak-didier.tar.gz
 # Source4-md5:	83e98389e5b7fb39d2c0e3a96d5ca585
 Source5:	http://dl.sourceforge.net/nagios/imagepak-remus.tar.gz
 # Source5-md5:	76595744dae8153c921c4af6bf18383d
-# Source9-md5:	76595744dae8153c921c4af6bf18383d
 Source6:	http://dl.sourceforge.net/nagios/imagepak-satrapa.tar.gz
 # Source6-md5:	3ed26d8b49379e0dc14f448d5c2a70c3
-# Source10-md5:	3ed26d8b49379e0dc14f448d5c2a70c3
 Source7:	http://dl.sourceforge.net/nagios/imagepak-werschler.tar.gz
 # Source7-md5:	1a9cba019ccd27756977821aa735c40f
-# Source11-md5:	1a9cba019ccd27756977821aa735c40f
 Source8:	http://glen.alkohol.ee/pld/nagios/imagepak-pld-20050402.tar.bz2
 # Source8-md5:	ce63d30721ff791461813ab2c501f485
-# Source12-md5:	ce63d30721ff791461813ab2c501f485
 URL:		http://www.nagios.org/download/extras.php
 Requires:	nagios-cgi
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
