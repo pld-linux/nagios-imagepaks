@@ -1,13 +1,11 @@
 Summary:	Nagios Image Packs
 Name:		nagios-imagepaks
 Version:	1.0
-Release:	0.1
+Release:	0.3
 License:	Open Source
 Group:		Applications/WWW
 Source0:	http://dl.sourceforge.net/nagios/imagepak-base.tar.gz
 # Source0-md5:	35b75ece533dfdf4963a67ce4e77fc4a
-Source1:	http://dl.sourceforge.net/nagios/imagepak-andrade.tar.gz
-# Source1-md5:	6e3d35113812e19a2803281a3317fffb
 Source2:	http://dl.sourceforge.net/nagios/imagepak-bernhard.tar.gz
 # Source2-md5:	cd711110929fd2487234172a533e82c5
 Source3:	http://dl.sourceforge.net/nagios/imagepak-cook.tar.gz
@@ -38,9 +36,8 @@ PNG, and GD2 versions of each icon.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT%{_logodir}/{andrade,bernhard,cook}
+install -d $RPM_BUILD_ROOT%{_logodir}/{bernhard,cook}
 tar -xz -C $RPM_BUILD_ROOT%{_logodir} -f %{SOURCE0}
-tar -xz -C $RPM_BUILD_ROOT%{_logodir}/andrade --strip-path=1 -f %{SOURCE1}
 tar -xz -C $RPM_BUILD_ROOT%{_logodir}/bernhard --strip-path=1 -f %{SOURCE2}
 tar -xz -C $RPM_BUILD_ROOT%{_logodir}/cook -f %{SOURCE3}
 tar -xz -C $RPM_BUILD_ROOT%{_logodir} -f %{SOURCE4}
