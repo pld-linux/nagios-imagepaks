@@ -1,7 +1,7 @@
 Summary:	Nagios Image Packs
 Name:		nagios-imagepaks
 Version:	1.0
-Release:	0.4
+Release:	0.11
 License:	Open Source
 Group:		Applications/WWW
 Source0:	http://dl.sourceforge.net/nagios/imagepak-base.tar.gz
@@ -18,8 +18,8 @@ Source5:	http://dl.sourceforge.net/nagios/imagepak-satrapa.tar.gz
 # Source5-md5:	3ed26d8b49379e0dc14f448d5c2a70c3
 Source6:	http://dl.sourceforge.net/nagios/imagepak-werschler.tar.gz
 # Source6-md5:	1a9cba019ccd27756977821aa735c40f
-Source7:	http://glen.alkohol.ee/pld/nagios/imagepak-pld-20050402.tar.bz2
-# Source7-md5:	ce63d30721ff791461813ab2c501f485
+Source7:	http://glen.alkohol.ee/pld/nagios/imagepak-pld-20050402.4.tar.bz2
+# Source7-md5:	9a635a4e2fed2460d2851cb35c658aba
 URL:		http://www.nagios.org/download/extras.php
 Requires:	nagios-cgi
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
