@@ -23,6 +23,7 @@ Source7:	http://dl.sourceforge.net/nagios/imagepak-werschler.tar.gz
 Source8:	http://glen.alkohol.ee/pld/nagios/imagepak-pld-20050402.tar.bz2
 # Source8-md5:	ce63d30721ff791461813ab2c501f485
 URL:		http://www.nagios.org/download/extras.php
+Obsoletes:  nagios-imagepak
 Requires:	nagios-cgi
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,6 +33,86 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Image packs are provided so that you have some colorful OS and device
 images to beautify your CGIs in Nagios. Each pack includes GIF, JPEG,
 PNG, and GD2 versions of each icon.
+
+%package -n nagios-imagepak-base
+Summary:    Basic OS and device logos for Nagios
+Group:		Applications/WWW
+Requires:	nagios-cgi
+Provides:	nagios-imagepak
+Obsoletes:	nagios-imagepaks
+
+%description -n nagios-imagepak-base
+Basic OS and device logos by various contributors.
+
+%package -n nagios-imagepak-andrade
+Summary:    Contributed OS and device logos for Nagios
+Group:		Applications/WWW
+Requires:	nagios-cgi
+Provides:	nagios-imagepak
+Obsoletes:	nagios-imagepaks
+
+%description -n nagios-imagepak-andrade
+Contributed OS and device logos by Luiz Andrade.
+
+%package -n nagios-imagepak-bernhard
+Summary:    Contributed OS and device logos for Nagios
+Group:		Applications/WWW
+Requires:	nagios-cgi
+Provides:	nagios-imagepak
+Obsoletes:	nagios-imagepaks
+
+%description -n nagios-imagepak-bernhard
+Contributed OS and device logos by Albler Bernhard.
+
+%package -n nagios-imagepak-cook
+Summary:    Contributed OS and device logos for Nagios
+Group:		Applications/WWW
+Requires:	nagios-cgi
+Provides:	nagios-imagepak
+Obsoletes:	nagios-imagepaks
+
+%description -n nagios-imagepak-cook
+Contributed OS and device logos by Garry Cook.
+
+%package -n nagios-imagepak-didier
+Summary:    Contributed OS and device logos for Nagios
+Group:		Applications/WWW
+Requires:	nagios-cgi
+Provides:	nagios-imagepak
+Obsoletes:	nagios-imagepaks
+
+%description -n nagios-imagepak-didier
+Contributed OS and device logos by Liroulet Didier.
+
+%package -n nagios-imagepak-remus
+Summary:    Contributed OS and device logos for Nagios
+Group:		Applications/WWW
+Requires:	nagios-cgi
+Provides:	nagios-imagepak
+Obsoletes:	nagios-imagepaks
+
+%description -n nagios-imagepak-remus
+Contributed OS and device logos by Rob Remus.
+
+%package -n nagios-imagepak-satrapa
+Summary:    Contributed OS and device logos for Nagios
+Group:		Applications/WWW
+Requires:	nagios-cgi
+Provides:	nagios-imagepak
+Obsoletes:	nagios-imagepaks
+
+%description -n nagios-imagepak-satrapa
+Contributed OS and device logos by Pavel Satrapa.
+
+%package -n nagios-imagepak-werschler
+Summary:    Contributed OS and device logos for Nagios
+Group:		Applications/WWW
+Requires:	nagios-cgi
+Provides:	nagios-imagepak
+Obsoletes:	nagios-imagepaks
+
+%description -n nagios-imagepak-werschler
+Contributed OS and device logos by Brad Werschler.
 
 %prep
 
@@ -55,3 +136,35 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %{_logodir}/*
+
+%files -n nagios-imagepak-base
+%defattr(644,root,root,755)
+%{_logodir}/base
+
+%files -n nagios-imagepak-andrade
+%defattr(644,root,root,755)
+%{_logodir}/andrade
+
+%files -n nagios-imagepak-bernhard
+%defattr(644,root,root,755)
+%{_logodir}/bernhard
+
+%files -n nagios-imagepak-cook
+%defattr(644,root,root,755)
+%{_logodir}/cook
+
+%files -n nagios-imagepak-didier
+%defattr(644,root,root,755)
+%{_logodir}/didier
+
+%files -n nagios-imagepak-remus
+%defattr(644,root,root,755)
+%{_logodir}/remus
+
+%files -n nagios-imagepak-satrapa
+%defattr(644,root,root,755)
+%{_logodir}/satrapa
+
+%files -n nagios-imagepak-werschler
+%defattr(644,root,root,755)
+%{_logodir}/werschler
