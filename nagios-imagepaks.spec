@@ -21,6 +21,7 @@ Source6:	http://dl.sourceforge.net/nagios/imagepak-werschler.tar.gz
 Source7:	http://glen.alkohol.ee/pld/nagios/imagepak-pld-20050402.4.tar.bz2
 # Source7-md5:	9a635a4e2fed2460d2851cb35c658aba
 URL:		http://www.nagios.org/download/extras.php
+BuildRequires:	tar >= 1:1.15.1
 Requires:	nagios-cgi
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -38,13 +39,13 @@ rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_logodir}/{bernhard,cook}
 tar -xz -C $RPM_BUILD_ROOT%{_logodir} -f %{SOURCE0}
-tar -xz -C $RPM_BUILD_ROOT%{_logodir}/bernhard --strip-path=1 -f %{SOURCE1}
+tar -xz -C $RPM_BUILD_ROOT%{_logodir}/bernhard --strip-components=1 -f %{SOURCE1}
 tar -xz -C $RPM_BUILD_ROOT%{_logodir}/cook -f %{SOURCE2}
 tar -xz -C $RPM_BUILD_ROOT%{_logodir} -f %{SOURCE3}
 tar -xz -C $RPM_BUILD_ROOT%{_logodir} -f %{SOURCE4}
 tar -xz -C $RPM_BUILD_ROOT%{_logodir} -f %{SOURCE5}
 tar -xz -C $RPM_BUILD_ROOT%{_logodir} -f %{SOURCE6}
-tar -xj -C $RPM_BUILD_ROOT%{_logodir}/base --strip-path=1 -f %{SOURCE7}
+tar -xj -C $RPM_BUILD_ROOT%{_logodir}/base --strip-components=1 -f %{SOURCE7}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
