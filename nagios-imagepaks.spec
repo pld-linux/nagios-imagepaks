@@ -35,10 +35,10 @@ images to beautify your CGIs in Nagios. Each pack includes GIF, JPEG,
 PNG, and GD2 versions of each icon.
 
 %description -l pl
-Ten pakiet dostarcza zestawy obrazków, dziêki którym mo¿na mieæ
-kolorowe obrazki systemów operacyjnych i urz±dzeñ w skryptach CGI z
-Nagiosa. Ka¿dy zestaw zawiera wersje GIF, JPEG, PNG i GD2 ka¿dej
-ikony.
+Ten pakiet dostarcza zestawy obrazków, dziêki którym mo¿na,
+przypisuj±c kolorowe symbole do systemów operacyjnych i urz±dzeñ,
+uatrakcyjniæ skrypty CGI Nagiosa. Ka¿dy zestaw zawiera wersje GIF, JPEG,
+PNG i GD2 ka¿dej ikony.
 
 %prep
 
