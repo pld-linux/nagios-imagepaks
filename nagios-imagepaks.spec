@@ -1,5 +1,5 @@
 Summary:	Nagios Image Packs
-Summary(pl):	Zestawy obrazków dla Nagiosa
+Summary(pl.UTF-8):   Zestawy obrazkÃ³w dla Nagiosa
 Name:		nagios-imagepaks
 Version:	1.0
 Release:	1
@@ -34,11 +34,11 @@ Image packs are provided so that you have some colorful OS and device
 images to beautify your CGIs in Nagios. Each pack includes GIF, JPEG,
 PNG, and GD2 versions of each icon.
 
-%description -l pl
-Ten pakiet dostarcza zestawy obrazków, dziêki którym mo¿na,
-przypisuj±c kolorowe symbole do systemów operacyjnych i urz±dzeñ,
-uatrakcyjniæ skrypty CGI Nagiosa. Ka¿dy zestaw zawiera wersje GIF, JPEG,
-PNG i GD2 ka¿dej ikony.
+%description -l pl.UTF-8
+Ten pakiet dostarcza zestawy obrazkÃ³w, dziÄ™ki ktÃ³rym moÅ¼na,
+przypisujÄ…c kolorowe symbole do systemÃ³w operacyjnych i urzÄ…dzeÅ„,
+uatrakcyjniÄ‡ skrypty CGI Nagiosa. KaÅ¼dy zestaw zawiera wersje GIF, JPEG,
+PNG i GD2 kaÅ¼dej ikony.
 
 %prep
 
