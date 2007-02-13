@@ -1,5 +1,5 @@
 Summary:	Nagios Image Packs
-Summary(pl.UTF-8):   Zestawy obrazków dla Nagiosa
+Summary(pl.UTF-8):	Zestawy obrazków dla Nagiosa
 Name:		nagios-imagepaks
 Version:	1.0
 Release:	1
