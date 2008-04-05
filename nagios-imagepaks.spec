@@ -2,7 +2,7 @@ Summary:	Nagios Image Packs
 Summary(pl.UTF-8):	Zestawy obrazków dla Nagiosa
 Name:		nagios-imagepaks
 Version:	1.0
-Release:	1
+Release:	2
 License:	Open Source
 Group:		Applications/WWW
 Source0:	http://dl.sourceforge.net/nagios/imagepak-base.tar.gz
