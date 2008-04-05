@@ -21,7 +21,7 @@ Source6:	http://dl.sourceforge.net/nagios/imagepak-werschler.tar.gz
 # Source6-md5:	1a9cba019ccd27756977821aa735c40f
 Source7:	http://glen.alkohol.ee/pld/nagios/imagepak-pld-20050402.4.tar.bz2
 # Source7-md5:	9a635a4e2fed2460d2851cb35c658aba
-URL:		http://www.nagiosexchange.org/Image_Packs.75.0.html
+URL:		http://www.nagiosexchange.org/cgi-bin/pages/Artwork/Image_Packs/index.html
 BuildRequires:	tar >= 1:1.15.1
 Requires:	nagios-cgi
 BuildArch:	noarch
