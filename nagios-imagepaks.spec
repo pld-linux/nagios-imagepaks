@@ -25,11 +25,15 @@ Source6:	http://dl.sourceforge.net/nagios/imagepak-werschler.tar.gz
 Source7:	http://glen.alkohol.ee/pld/nagios/imagepak-pld-20050402.4.tar.bz2
 # Source7-md5:	9a635a4e2fed2460d2851cb35c658aba
 Source8:	symbols-v1.1.tar.gz
-# Source8-md5:	9a635a4e2fed2460d2851cb35c658aba
+# Source8-md5:	2c40462f698838c3c528fe1aea42e308
 # Source8Download:	http://www.nagiosexchange.org/cgi-bin/jump.cgi?ID=1412&view=File2;d=1
-# Source8URL:	http://www.nagiosexchange.org/cgi-bin/pages/Detailed/1412.html
 # Source8License: GPL v2
+# Source8URL:	http://www.nagiosexchange.org/cgi-bin/pages/Detailed/1412.html
+Source9:	mandriva.png
+# Source9-md5:	72e3a8d8c4bcc05dafe53151253997a4
 URL:		http://www.nagiosexchange.org/cgi-bin/pages/Artwork/Image_Packs/index.html
+BuildRequires:	ImageMagick
+BuildRequires:	gd-progs
 BuildRequires:	tar >= 1:1.15.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -62,6 +66,13 @@ tar -xz -C logos -f %{SOURCE6}
 tar -xj -C logos/base --strip-components=1 -f %{SOURCE7}
 tar -xz -C logos -f %{SOURCE8}
 rm -f logos/symbols/LICENSE # GPL v2
+cp %{SOURCE9} logos/base
+
+%build
+# shiny mandriva icon
+convert logos/base/mandriva.png logos/base/mandriva.gif
+convert logos/base/mandriva.png logos/base/mandriva.jpg
+pngtogd2 logos/base/mandriva.png logos/base/mandriva.gd2 0 1
 
 %install
 rm -rf $RPM_BUILD_ROOT
