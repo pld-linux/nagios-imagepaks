@@ -1,8 +1,11 @@
+# TODO
+# - drop the icons other than base, they are quite useless and find better and
+#   complete (perhaps some desktop?) icons?
 Summary:	Nagios Image Packs
 Summary(pl.UTF-8):	Zestawy obrazków dla Nagiosa
 Name:		nagios-imagepaks
 Version:	1.0
-Release:	2
+Release:	3
 License:	Open Source
 Group:		Applications/WWW
 Source0:	http://dl.sourceforge.net/nagios/imagepak-base.tar.gz
@@ -21,6 +24,11 @@ Source6:	http://dl.sourceforge.net/nagios/imagepak-werschler.tar.gz
 # Source6-md5:	1a9cba019ccd27756977821aa735c40f
 Source7:	http://glen.alkohol.ee/pld/nagios/imagepak-pld-20050402.4.tar.bz2
 # Source7-md5:	9a635a4e2fed2460d2851cb35c658aba
+Source8:	symbols-v1.1.tar.gz
+# Source8-md5:	9a635a4e2fed2460d2851cb35c658aba
+# Source8Download:	http://www.nagiosexchange.org/cgi-bin/jump.cgi?ID=1412&view=File2;d=1
+# Source8URL:	http://www.nagiosexchange.org/cgi-bin/pages/Detailed/1412.html
+# Source8License: GPL v2
 URL:		http://www.nagiosexchange.org/cgi-bin/pages/Artwork/Image_Packs/index.html
 BuildRequires:	tar >= 1:1.15.1
 BuildArch:	noarch
@@ -36,23 +44,29 @@ PNG, and GD2 versions of each icon.
 %description -l pl.UTF-8
 Ten pakiet dostarcza zestawy obrazków, dzięki którym można,
 przypisując kolorowe symbole do systemów operacyjnych i urządzeń,
-uatrakcyjnić skrypty CGI Nagiosa. Każdy zestaw zawiera wersje GIF, JPEG,
-PNG i GD2 każdej ikony.
+uatrakcyjnić skrypty CGI Nagiosa. Każdy zestaw zawiera wersje GIF,
+JPEG, PNG i GD2 każdej ikony.
 
 %prep
+%setup -qcT
+install -d logos/{bernhard,cook}
+tar -xz -C logos -f %{SOURCE0}
+tar -xz -C logos/bernhard --strip-components=1 -f %{SOURCE1}
+tar -xz -C logos/cook -f %{SOURCE2}
+# .tar.gz junk
+rm -f logos/cook/README
+tar -xz -C logos -f %{SOURCE3}
+tar -xz -C logos -f %{SOURCE4}
+tar -xz -C logos -f %{SOURCE5}
+tar -xz -C logos -f %{SOURCE6}
+tar -xj -C logos/base --strip-components=1 -f %{SOURCE7}
+tar -xz -C logos -f %{SOURCE8}
+rm -f logos/symbols/LICENSE # GPL v2
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
-install -d $RPM_BUILD_ROOT%{_logodir}/{bernhard,cook}
-tar -xz -C $RPM_BUILD_ROOT%{_logodir} -f %{SOURCE0}
-tar -xz -C $RPM_BUILD_ROOT%{_logodir}/bernhard --strip-components=1 -f %{SOURCE1}
-tar -xz -C $RPM_BUILD_ROOT%{_logodir}/cook -f %{SOURCE2}
-tar -xz -C $RPM_BUILD_ROOT%{_logodir} -f %{SOURCE3}
-tar -xz -C $RPM_BUILD_ROOT%{_logodir} -f %{SOURCE4}
-tar -xz -C $RPM_BUILD_ROOT%{_logodir} -f %{SOURCE5}
-tar -xz -C $RPM_BUILD_ROOT%{_logodir} -f %{SOURCE6}
-tar -xj -C $RPM_BUILD_ROOT%{_logodir}/base --strip-components=1 -f %{SOURCE7}
+install -d $RPM_BUILD_ROOT%{_logodir}
+cp -a logos/* $RPM_BUILD_ROOT%{_logodir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
