@@ -5,7 +5,7 @@ Summary:	Nagios Image Packs
 Summary(pl.UTF-8):	Zestawy obrazków dla Nagiosa
 Name:		nagios-imagepaks
 Version:	1.0
-Release:	3
+Release:	4
 License:	Open Source
 Group:		Applications/WWW
 Source0:	http://dl.sourceforge.net/nagios/imagepak-base.tar.gz
@@ -22,8 +22,8 @@ Source5:	http://dl.sourceforge.net/nagios/imagepak-satrapa.tar.gz
 # Source5-md5:	3ed26d8b49379e0dc14f448d5c2a70c3
 Source6:	http://dl.sourceforge.net/nagios/imagepak-werschler.tar.gz
 # Source6-md5:	1a9cba019ccd27756977821aa735c40f
-Source7:	http://glen.alkohol.ee/pld/nagios/imagepak-pld-20050402.4.tar.bz2
-# Source7-md5:	9a635a4e2fed2460d2851cb35c658aba
+Source7:	http://glen.alkohol.ee/pld/nagios/imagepak-pld-20090804.tar.bz2
+# Source7-md5:	e6ea8e9fa534ae8edea462c6ee5fa3ed
 Source8:	symbols-v1.1.tar.gz
 # Source8-md5:	2c40462f698838c3c528fe1aea42e308
 # Source8Download:	http://www.nagiosexchange.org/cgi-bin/jump.cgi?ID=1412&view=File2;d=1
