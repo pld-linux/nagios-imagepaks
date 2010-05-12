@@ -24,11 +24,12 @@ Source6:	http://dl.sourceforge.net/nagios/imagepak-werschler.tar.gz
 # Source6-md5:	1a9cba019ccd27756977821aa735c40f
 Source7:	http://glen.alkohol.ee/pld/nagios/imagepak-pld-20090804.tar.bz2
 # Source7-md5:	e6ea8e9fa534ae8edea462c6ee5fa3ed
-Source8:	symbols-v1.1.tar.gz
+# Source7License: Public Domain - http://glen.alkohol.ee/pld/nagios/
+Source8:	http://www.monitoringexchange.org/attachment/download/Artwork/Image-Packs/Network-Symbols/symbols-v1.1.tar.gz
 # Source8-md5:	2c40462f698838c3c528fe1aea42e308
 # Source8Download:	http://www.nagiosexchange.org/cgi-bin/jump.cgi?ID=1412&view=File2;d=1
 # Source8License: GPL v2
-# Source8URL:	http://www.nagiosexchange.org/cgi-bin/pages/Detailed/1412.html
+# Source8URL:	http://www.monitoringexchange.org/inventory/Artwork/Image-Packs/Network-Symbols
 Source9:	mandriva.png
 # Source9-md5:	72e3a8d8c4bcc05dafe53151253997a4
 URL:		http://www.nagiosexchange.org/cgi-bin/pages/Artwork/Image_Packs/index.html
