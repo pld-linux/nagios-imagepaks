@@ -34,6 +34,7 @@ Source9:	mandriva.png
 # Source9-md5:	72e3a8d8c4bcc05dafe53151253997a4
 URL:		http://www.nagiosexchange.org/cgi-bin/pages/Artwork/Image_Packs/index.html
 BuildRequires:	ImageMagick
+BuildRequires:	ImageMagick-coder-png
 BuildRequires:	gd-progs
 BuildRequires:	tar >= 1:1.15.1
 BuildArch:	noarch
